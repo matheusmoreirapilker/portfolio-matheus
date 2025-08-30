@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,38 @@
 </head>
 <body>
   <header class="header">
+      <nav class="header__nav">
+    <ul class="menu menu--principal">
+      <li class="menu__item">
+        <a class="menu__link active" href="#inicio" >
+          <span class="menu__text">Inicio</span>
+        </a>
+      </li>
+            <li class="menu__item">
+        <a class="menu__link" href="#projetos" >
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+            <li class="menu__item">
+        <a class="menu__link" href="#sobre" >
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+            <li class="menu__item">
+        <a class="menu__link" href="https://wa.me/5527999836593" >
+          <span class="menu__text">Contatos</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
     <div class="class header__brand">
-      <img class="brand__logo " src="images/logo-mp.png" alt="logo MP">
+      <img class="brand__logo" src="images/logomp.png" alt="logo MP">
     </div>
-    <i id="toggletheme" class="bi bi-sun"></i>
+    <div class="header__toggle">
+     <i id="toggletheme" class="bi bi-sun"></i>
+    </div>
   </header>
-  <nav>
+  <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
         <a class="menu__link active" href="#inicio" >
@@ -37,13 +63,61 @@
         </a>
       </li>
             <li class="menu__item">
-        <a class="menu__link" href="#contato" >
+        <a class="menu__link" href="https://wa.me/5527999836593" >
           <i class="menu__icon bi bi-envelope"></i>
           <span class="menu__text">Contatos</span>
         </a>
       </li>
     </ul>
   </nav>
-  <h1>Matheus Pilker</h1>
+  <main>
+    <div class="main__content1">
+      <h1><b>Matheus Pilker, Soluções Ideias & Desenvolvimento Front-end</b></h1>
+      <p>Matheus Pilker, Linhares-ES, Desenvolvedor Front-end</p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/matheusmoreirapilker"><i class=" menu__icon bi bi-github"></i>
+          <span>Github</span></a>
+        </li>
+         <li>
+          <a class="menu__link" href=""><i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span></a>
+        </li>
+        <li>
+          <a class="menu__link" href=""><i class="bi bi-linkedin"></i>
+          <span>LinkedIn</span></a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn--primary">
+        <span>ver projetos</span>
+        <i class="bi bi-arrow-down-right"></i>
+      </button>
+    </div>
+
+  </main>
+  <section class="skills">
+    <h2>Conhecimentos nas principais tecnologias do mercado</h2>
+    <ul class="skills__list">
+      <li class="skills__item">
+        <img src="technologies/TypeScript.svg" alt="Logo TypeScript" height="50px">
+      </li>
+      <li class="skills__item">
+        <img class="skills__logo" src="technologies/Bootstrap.svg" alt="Logo Bootstrap" height="50px">
+      </li>
+      <li class="skills__item">
+        <img class="skills__logo" src="technologies/HTML.svg" alt="Logo Bootstrap" height="50px">
+      </li>
+      <li class="skills__item">
+        <img class="skills__logo" src="technologies/CSS.svg" alt="Logo Bootstrap" height="50px">
+      </li>
+      <li class="skills__item">
+        <img class="skills__logo" src="technologies/React.svg" alt="Logo Bootstrap" height="50px">
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2025. Todos os direitos reservados. Matheus Pilker. Desenvolvido por <a href="https://github.com/matheusmoreirapilker">MMP</a></p>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
