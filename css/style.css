@@ -19,7 +19,7 @@
     --primary-color: #0B0B0F;
     
     --primary-bg-color: #E9E9E9;
-    --secondary-bg-color: #C7C8C9;
+    --secondary-bg-color: #9A9A9C;
     --border-color: #C7C8C9;
 
     --title-color: #0B0B0F;
@@ -29,7 +29,7 @@
 
 }
 
-html[dark-theme="light"] .brand__logo{
+html[data-theme="light"] .brand__logo{
     filter: invert(1);
 
 }
@@ -251,6 +251,13 @@ main{
     height: 2.4rem;
 }
 
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    
+}
+
 /* Garante que o footer não fique escondido atrás da nav--mobile */
 footer {
   text-align: center;
@@ -289,6 +296,12 @@ footer p{
 
     h1{
         font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 10px;
     }
 
     main{
